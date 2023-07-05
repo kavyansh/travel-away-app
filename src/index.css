@@ -11,6 +11,7 @@ body {
   background-color: rgba(128, 128, 128, 0.086);
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .container {
@@ -42,6 +43,7 @@ body::before {
   opacity: 0.6;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .header {
