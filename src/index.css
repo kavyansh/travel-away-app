@@ -13,10 +13,12 @@ body {
   padding: 0;
   overflow-x: hidden;
   background-image: url("https://images.unsplash.com/photo-1604357209793-fca5dca89f97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80");
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
-  background-color: #fffffff1;
+  background-color: #fffffff3;
   border-radius: 10px;
   width: 80%;
   max-width: 1200px;
@@ -97,7 +99,6 @@ form input,
   font-size: 16px;
   margin-top: 10px;
   border: none;
-  border: 0.1px solid rgba(128, 128, 128, 0.395);
   padding: 5px;
   border-radius: 5px;
 }
