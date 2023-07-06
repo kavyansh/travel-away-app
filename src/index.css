@@ -12,12 +12,12 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-image: url("https://images.unsplash.com/photo-1604357209793-fca5dca89f97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80");
 }
 
 .container {
-  background-color: #fff;
-  border: 10px solid #2f80ed;
-  border-radius: 20px;
+  background-color: #fffffff1;
+  border-radius: 10px;
   width: 80%;
   max-width: 1200px;
   min-height: 100vh;
@@ -29,21 +29,7 @@ body {
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   padding: 50px;
   position: relative;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../public/background-img.jpg");
-  background-position: bottom;
-  opacity: 0.6;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
+  overflow: hidden;
 }
 
 .header {
@@ -55,18 +41,24 @@ body::before {
 
 .header h1 {
   margin: 0 20px 0 0;
-  font-size: 46px;
+  font-size: 80px;
   font-weight: 500;
   font-family: "Agdasima", sans-serif;
+  width: 100%;
+  text-align: center;
+  color: white;
 }
 
 .header::before {
   content: "An interative travel packing list";
   position: absolute;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 500;
   bottom: -18px;
   left: 5px;
+  width: 100%;
+  text-align: center;
+  color: white;
 }
 
 form {
@@ -74,7 +66,8 @@ form {
   margin: 20px 0;
   display: flex;
   width: 100%;
-  justify-content: left;
+  justify-content: flex-start;
+  align-items: flex-end;
   position: relative;
 }
 
@@ -104,12 +97,13 @@ form input,
   font-size: 16px;
   margin-top: 10px;
   border: none;
-  border-bottom: 1px solid grey;
+  border: 0.1px solid rgba(128, 128, 128, 0.395);
+  padding: 5px;
+  border-radius: 5px;
 }
 
 form input:focus,
 .email input:focus {
-  border-bottom: 1px solid grey;
   outline: 0;
 }
 
@@ -170,7 +164,7 @@ button:active {
 
 footer {
   margin: 20px 0 0 0;
-  background-color: #ebf3fe;
+  background-color: #d9e7fb;
   width: 100%;
   border-radius: 10px;
   color: #2f80ed;
@@ -483,6 +477,8 @@ footer {
 @media (max-width: 912px) {
   form {
     flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
   }
 
   form input {

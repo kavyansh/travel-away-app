@@ -28,16 +28,18 @@ export default function App() {
     setItems([]);
   }
   return (
-    <div className="container">
+    <>
       <Header />
-      <Form onAddItems={handleAddItems} />
-      <PackingList
-        items={items}
-        onToggleItem={handleToggleItem}
-        onDeleteItem={handleDeleteItem}
-        onClearItems={handleOnClearItems}
-      />
-      <Footer items={items} />
-    </div>
+      <div className="container">
+        <Form onAddItems={handleAddItems} />
+        <PackingList
+          items={items}
+          onToggleItem={handleToggleItem}
+          onDeleteItem={handleDeleteItem}
+          onClearItems={handleOnClearItems}
+        />
+        <Footer items={items} />
+      </div>
+    </>
   );
 }
